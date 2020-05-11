@@ -39,7 +39,6 @@ function BlogPost (props) {
                   : format(new Date(publishedAt), 'MMMM Do, YYYY')}
               </div>
             )}
-            {authors && <AuthorList items={authors} title='Authors' />}
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>

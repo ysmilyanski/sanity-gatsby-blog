@@ -1,5 +1,6 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 .root {
   position: relative;
@@ -12,6 +13,8 @@
   max-width: 960px;
   padding: 1em;
   display: flex;
+  border-bottom-style: solid;
+  border-width: 1px;
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
@@ -19,7 +22,8 @@
 }
 
 .branding {
-  font-weight: 600;
+  font-family: Source Sans Pro;
+  text-transform: uppercase;
   flex: 1;
 
   @nest & a {
@@ -58,6 +62,8 @@
 
 .nav {
   display: none;
+  font-family: Source Sans Pro;
+  text-transform: uppercase;
 
   @nest & ul {
     margin: 0;

@@ -19,6 +19,23 @@ export default {
           source: 'title',
           maxLength: 96
         }
-      }
+    },
+    {
+      name: 'mainImage',
+      type: 'mainImage',
+      title: 'Main image'
+    },
+    {
+      name: 'excerpt',
+      type: 'excerptPortableText',
+      title: 'Excerpt',
+      description:
+        'This ends up on summary pages, on Google, when people share your post in social media.'
+    },
+    {
+      name: 'body',
+      type: 'bodyPortableText',
+      title: 'Body'
+    }
     ]
 }

@@ -1,5 +1,6 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 
 
@@ -8,6 +9,7 @@
  */
 
 .title1 {
+  font-family: 'Source Serif Pro';
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
 }
