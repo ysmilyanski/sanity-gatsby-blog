@@ -72,7 +72,7 @@
 }
 
 .responsiveTitle1 {
-  font-weight: 600;
+  font-weight: normal;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin: 1rem 0 2rem;
@@ -106,7 +106,8 @@
 }
 
 .responsiveTitle3 {
-  font-weight: 600;
+  font-weight: normal;
+  font-family: 'Source Serif Pro';
   font-size: var(--font-large-size);
   line-height: var(--font-large-line-height);
   margin: 1rem 0 0.5rem;
