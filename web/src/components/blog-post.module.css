@@ -1,5 +1,6 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 .root {}
 
@@ -45,8 +46,10 @@
     }
   }
 
+  font-family: 'Source Sans Pro';
+  
   @nest & h2, & h3, & h4, & h5, & h6 {
-    font-weight: 600;
+    font-weight: normal;
   }
 
   @nest & figure {
@@ -60,17 +63,27 @@
 }
 
 .metaContent {
+  float: left;
 }
 
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 2rem 0 3rem;
-  color: var(--color-gray);
+  color: var(--color-black);
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 3rem;
 }
 
 .categories {
-  border-top: 1px solid var(--color-very-light-gray);
+  /* border-top: 1px solid var(--color-very-light-gray); */
   margin: 2rem 0 3rem;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  color: var(--color-gray);
+  composes: small from './typography.module.css';
+  display: inline-block;
 
   @nest & ul {
     list-style: none;
