@@ -97,7 +97,10 @@ const IndexPage = props => {
         keywords={site.keywords}
       />
       <Container>
-        <h1>Welcome to {site.title}</h1>
+        <h1>
+          <p>{site.description}</p>
+          <a href="/archive">See me work</a>
+        </h1>
         {postNodes && (
           <BlogPostPreviewList
             title='Selected projects'

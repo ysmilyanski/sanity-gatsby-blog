@@ -2,17 +2,26 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  margin: 2em 0 4em;
+  margin: 0 0 4em;
 }
 
 .headline {
-  font-size: var(--font-micro-size);
+  font-size: var(--font-small-size);
   font-family: Source Sans Pro;
-  line-height: var(--font-micro-line-height);
+  line-height: var(--font-small-line-height);
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+
+  /* including divider line
+  
+  box-sizing: border-box;
+  padding: 1em;
+  display: flex;
+  border-bottom-style: solid;
+  border-width: 1px; */
 }
 
 .grid {
@@ -27,6 +36,7 @@
 
 .browseMoreNav {
   composes: small from './typography.module.css';
+  text-transform: uppercase;
   margin-top: 2rem;
   text-align: center;
 

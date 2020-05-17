@@ -43,7 +43,7 @@
 .title {
   @media (hover: hover) {
     @nest .root:hover & {
-      text-decoration: underline;
+      color: var(--color-accent);
     }
   }
 
@@ -72,4 +72,5 @@
   color: var(--color-black);
   text-transform: uppercase;
   font-family: 'Source Sans Pro';
+  margin-bottom: 0.5em;
 }

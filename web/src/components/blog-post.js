@@ -52,6 +52,9 @@ function BlogPost (props) {
             )}
             {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
+          <div className={styles.sideContent}>
+            {/* maybe eventually add annotations/important links here? */}
+          </div>
         </div>
       </Container>
     </article>

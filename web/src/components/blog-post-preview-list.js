@@ -18,7 +18,7 @@ function BlogPostPreviewGrid (props) {
       </ul>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
-          <Link to={props.browseMoreHref}>Browse all</Link>
+          <Link to={props.browseMoreHref}>Browse all projects</Link>
         </div>
       )}
     </div>

@@ -11,11 +11,22 @@ body {
   background: var(--color-white);
   color: var(--color-black);
   margin: 0;
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
 }
 
 h1 {
   font-family: 'Source Serif Pro', sans-serif;
   font-weight: normal;
+  padding-bottom: 2em;
+
+  @nest & a {
+    color: var(--color-accent);
+  }
+}
+
+.headingH1 {
+  display: hidden;
 }
 
 html,
