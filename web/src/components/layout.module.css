@@ -48,3 +48,32 @@
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
 }
+
+.preFooterWrapper {
+  box-sizing: border-box;
+  max-width: 960px;
+  padding: 2em 1.5em 1.5em;
+  margin: 0 auto;
+  background-color: var(--color-accent);
+
+  @media (--media-min-small) {
+    padding: 3em 2em 2em;
+  }
+}
+
+.preFooter {
+  color: var(--color-white);
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-line-height);
+
+  @nest & a {
+    text-decoration: underline;
+    color: var(--color-white);
+  }
+}
+
+.preFooterTitle {
+  font-family: 'Source Serif Pro';
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+}

@@ -42,6 +42,11 @@ export default {
       name: 'mainImage',
       type: 'mainImage',
       title: 'Main image'
+    },
+    {
+      name: 'resume',
+      type: 'file',
+      title: 'Resume',
     }
   ]
 }
